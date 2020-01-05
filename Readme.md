@@ -1,4 +1,4 @@
-### 2020.1.5 수정
+### 2020.1.6 수정
 
 ### JAVA
 
@@ -29,3 +29,8 @@
 - super
 - instanceof
 - abstract
+
+> 2020.01.06
+- hash
+- array
+- vecter
