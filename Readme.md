@@ -1,4 +1,4 @@
-### 2020.1.4 수정
+### 2020.1.5 수정
 
 ### JAVA
 
@@ -18,8 +18,14 @@
 - switch
 
 > 2020.01.03
-- Array
+- array
 
 > 2020.01.04
-- Class
+- class
 - public, static
+
+> 2020.01.05
+- extend(상속)
+- super
+- instanceof
+- abstract
