@@ -1,3 +1,5 @@
+package c_CopyOnWriteArrayList;
+
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
