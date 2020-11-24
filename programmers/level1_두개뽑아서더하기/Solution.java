@@ -1,4 +1,4 @@
-package level2_두개뽑아서더하기;
+package level1_두개뽑아서더하기;
 
 import java.util.*;
 
