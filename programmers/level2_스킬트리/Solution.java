@@ -9,31 +9,29 @@ public class Solution {
 
     public static int solution(String skill, String[] skill_trees) {
         int answer = 0;
-        char start[] = new char[skill.length()-1];
-        char end[] = new char[skill.length()-1];
 
-        for(int i=0; i<skill.length()-1; i++) {
-        	start[i] = skill.charAt(i);
-        	end[i] = skill.charAt(i+1);
+        for(int i=0; i<skill_trees.length; i++){ // 5
+            boolean flag = true;
+            String [] skills = skill_trees[i].split("");
+            int cnt =0;
+            for(int j=0; j<skills.length; j++){ // 3
+                // 처음 자릿수와 indexOf 비교
+            	if(cnt < skill.indexOf(skills[j])){
+                    flag = false;
+                    break;
+                    // 첫번째 위치인경우
+                }else if(cnt == skill.indexOf(skills[j]))
+                    cnt++;
+            }
+            
+            // flag true인 경우 이상 무
+            if(flag){
+                answer++;
+            }
+            
+            // cnt 초기화
+            cnt=0;
         }
-
-        int z = 0;
-    	for(int i=0; i<skill_trees.length; i++) {
-    		System.out.println( skill_trees[i]  + "------------------");
-    		for(int j=0; j<start.length; j++) {
-    			System.out.println( skill_trees[i].indexOf(start[j]) + " | " + skill_trees[i].indexOf(end[j]));
-    			if( skill_trees[i].indexOf(start[j]) > skill_trees[i].indexOf(end[j]) ) {
-    				z--;
-    			}
-    		}
-    		if( z >= 0) {
-    			answer++;
-    		}
-    		z = 0;
-    	}
-
-
         return answer;
-    }
-    
+    }    
 }
