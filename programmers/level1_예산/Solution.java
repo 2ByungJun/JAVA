@@ -6,8 +6,8 @@ import java.util.*;
 
 class Solution {
     public static void main(String[] args) {
-        int[] d = {2,2,3,3};
-        int budget = 10;
+        int[] d = {2,2,3,3,7,9,5,6};
+        int budget = 21;
 
         System.out.println("result : " + solution(d, budget));
 

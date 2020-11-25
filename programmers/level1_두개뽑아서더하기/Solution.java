@@ -17,6 +17,7 @@ public class Solution {
 
         for(int i=0; i<numbers.length-1; i++){
             for(int j=i+1; j<numbers.length; j++){
+                
                 treeSet.add(numbers[i] + numbers[j]);
             }
         }
@@ -26,6 +27,8 @@ public class Solution {
         for(int object : treeSet){
             answer[z++] = object;
         }
+
+        print(answer);
 
         return answer;
     }
